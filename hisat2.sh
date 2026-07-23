@@ -88,6 +88,7 @@ for condition in HBR UHR
        bam_index
 
     fi
+
    done
 done   
 
