@@ -9,6 +9,7 @@ mkdir -p ./reports/fastqc_post
 echo "==============================================="
 echo "~~~~~~~Fastqc and Trimmomatic processing~~~~~~~"
 echo "==============================================="
+
 for condition in HBR UHR
 do
    for replica in 1 2 3
