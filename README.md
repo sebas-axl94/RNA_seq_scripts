@@ -30,9 +30,9 @@ RNA_seq_scripts/
 ├── .gitignore
 ├── pipeline.sh     
 └── scripts/
-      ├── fastqc.sh           (Processing and Quality Control of raw reads): it uses FASTQC and Trimmomatic (SLIDINGWINDOW:40:30, MINLEN:50, ILLUMINACLIP(if needed)
-      ├── hisat2.sh           (Indexing of reference genome; alignment of processed reads (after trimming) to the reference genome; conversion of .sam to .bam: it uses HISAT2 and Samtools 
-      └── featurecounts.sh    (Generation of counts matrix and design file: it uses featureCounts
+      ├── fastqc.sh           (Processing and Quality Control of raw reads: it uses FASTQC and Trimmomatic (SLIDINGWINDOW:40:30, MINLEN:50, ILLUMINACLIP(if needed))
+      ├── hisat2.sh           (Indexing of reference genome; alignment of processed reads (after trimming) to the reference genome; conversion of .sam to .bam: it uses HISAT2 and Samtools) 
+      └── featurecounts.sh    (Generation of counts matrix and design file: it uses featureCounts)
 ```
 
 ## Repository directories generated after run pipeline.sh
