@@ -18,7 +18,7 @@ From **raw reads** to **count matrix**: FASTQC → Trimmomatic → HISAT2 → Sa
 * Before running the pipeline, you need to create two input directories in the project root and place your raw data and reference files inside them:
 1. **`reads/`**: Directory containing raw sequencing files in compressed FASTQ format (`.fq.gz`).
 2. **`refs/`**: Directory containing the genome reference files:
-   * **Only 1 Reference Genome file:** FASTA format (`.fa`).
+   * **Only 1 Reference Genome file:** FASTA format (`.fa` or `.fasta`).
    * **Only 1 Gene Annotation file:** GTF format (`.gtf`).
 
 ---//---
@@ -93,3 +93,6 @@ done
 The loop expects input files inside `reads/` to follow the pattern:
 * For **Paired-end sequencing**: `${condition}_${replica}_R{1,2}.fq.gz` (e.g., `HBR_1_R1.fq.gz` and `HBR_1_R2.fq.gz`)
 * For **Single-end sequencing**: `${condition}_${replica}.fq.gz` (e.g., `HBR_1.fq.gz`, `UHR_1.fq.gz`)
+
+## Contact 
+For questions, feedback, or issues, please contact me at: sebastian.hernandezv@udea.edu.co
