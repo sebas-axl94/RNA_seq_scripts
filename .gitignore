@@ -1,0 +1,38 @@
+# Ignore heavy sequencing and alignment formats
+*.fq.gz
+*.fastq.gz
+*.fastq
+*.bam
+*.bai
+
+
+# Ignore raw reads and reference directories
+reads/
+refs/*.fa
+refs/*.fasta
+refs/*.gtf
+refs/*.gff
+refs/*.gff3
+refs/file.ss
+refs/file.exons
+refs/index*
+
+# Ignore pipeline outputs & intermediate directories
+trimmed_seqs/
+trimmed_seqs_unpaired/
+reports/
+counts/
+
+
+
+
+
+
+
+
+
+
+
+# Ignorar una carpeta entera de datos
+reads/
+muestras/
