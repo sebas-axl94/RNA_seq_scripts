@@ -34,7 +34,7 @@ hisat2-build \
  -p 4 \
  --ss ./refs/file.ss \
  --exon ./refs/file.exons \
- ./refs/*.fa \
+ ./refs/*.{fa,fasta} \
  ./refs/index
 
 
