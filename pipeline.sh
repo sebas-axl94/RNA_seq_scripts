@@ -20,6 +20,6 @@ esac
 export MODO
 
 #Run the scripts
-bash ./fastqc.sh
-bash ./hisat2.sh
-bash ./featurecounts.sh
+bash ./scripts/fastqc.sh
+bash ./scripts/hisat2.sh
+bash ./scripts/featurecounts.sh
