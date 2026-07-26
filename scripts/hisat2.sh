@@ -13,6 +13,8 @@ function bam_index {
  return
 }
 
+genome_file=(./refs/*.fa ./refs/*.fasta)
+
 mkdir -p ./reports/sam 
 mkdir -p ./reports/bam
 
@@ -34,7 +36,7 @@ hisat2-build \
  -p 4 \
  --ss ./refs/file.ss \
  --exon ./refs/file.exons \
- ./refs/*.{fa,fasta} \
+ "${genome_file[0]}" \
  ./refs/index
 
 
